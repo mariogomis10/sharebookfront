@@ -1,4 +1,5 @@
 export class Book {
   name: string;
-  constructor() {}
+  category: string;
+  id?: number;
 }

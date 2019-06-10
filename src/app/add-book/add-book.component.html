@@ -1,0 +1,16 @@
+<div class="container-add-book">
+  <h1>Ajout Livre</h1>
+  <form (ngSubmit)="save()">
+    <div>
+      <label>Nom du livre</label>
+      <input type="text" name="name" [(ngModel)]="book.name" class="form-control">
+    </div>
+    <div>
+      <label>Categorie du livre</label>
+      <input type="text" name="category" [(ngModel)]="book.category" class="form-control">
+    </div>
+  <div class="container-submit">
+    <input type="submit" value="Valider" class="btn btn-prymary">
+  </div>
+  </form>
+</div>
