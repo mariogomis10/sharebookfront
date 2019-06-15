@@ -1,8 +1,8 @@
 <div class="mybooks-container">
   <h1>Mes Livres</h1>
   <div class="books">
-      <div *ngFor="let bookC2 of myBooks" >
-        <app-vue-book [bookFromParentComponet]="bookC2" (refreshBook)="ngOnInit()" ></app-vue-book>
+      <div *ngFor="let book of myBooks" >
+        <app-vue-book [book]="book" (refreshBook)="ngOnInit()"></app-vue-book>
       </div>
   </div>
 </div>

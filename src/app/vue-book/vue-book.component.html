@@ -1,8 +1,12 @@
 <div class="book-container">
-  <div class="book">
+  <div class="bookjj">
     <div class="image"><img src="/assets/book.png"></div>
-    <div>{{bookFromParentComponet.name}}</div>
-    <div>{{bookFromParentComponet.category}}</div>
-    <button (click)="deleteBook(bookFromParentComponet.id)">Supprimer</button>
+    <div>Id : {{book.id}}</div>
+    <div>Nom : {{book.name}}</div>
+    <div>Categorie : {{book.category}}</div>
+    <div *ngIf="!editMode">Prêteur : {{book.user.prenom}} {{book.user.nom}}</div>
+    <div *ngIf="editMode">
+      <button (click)="deleteBook(book.id)" class="btn btn-primary">Supprimer</button>
+    </div>
   </div>
 </div>

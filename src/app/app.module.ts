@@ -11,6 +11,10 @@ import { AddBookComponent } from './add-book/add-book.component';
 import {FormsModule} from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { ListBooksComponent } from './list-books/list-books.component';
+import { MyloansComponent } from './myloans/myloans.component';
+import { LoginComponent } from './login/login.component';
+import { AddUserComponent } from './add-user/add-user.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +23,11 @@ import { ListBooksComponent } from './list-books/list-books.component';
     VueBookComponent,
     AddBookComponent,
     HeaderComponent,
-    ListBooksComponent
+    ListBooksComponent,
+    MyloansComponent,
+    LoginComponent,
+    AddUserComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

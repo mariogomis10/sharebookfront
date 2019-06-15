@@ -9,8 +9,9 @@ import {BookService} from '../services/book.service';
 })
 export class VueBookComponent implements OnInit {
 
-  @Input() bookFromParentComponet: Book;
+  @Input() book: any;
   @Output() refreshBook =  new EventEmitter<boolean>();
+  @Input()  editMode = true;
 
   constructor(private bookService: BookService) { }
 

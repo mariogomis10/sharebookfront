@@ -10,10 +10,7 @@ import {Router} from '@angular/router';
 })
 export class AddBookComponent implements OnInit {
 
-  private book: Book = {
-    name  : '',
-    category  : ''
-  };
+  private book: Book = new Book();
   constructor(
     private bookService: BookService,
     private router: Router

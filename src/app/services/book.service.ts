@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import {Book} from '../model/Book';
 
 @Injectable({
   providedIn: 'root'
@@ -21,5 +20,8 @@ export class BookService {
   save(book): any {
     return this.http.post('http://localhost:8080/users/2/books', book);
   }
-
+  // get books available
+  getBooksAvailable(): any {
+    return this.http.get('http://localhost:8080/users/2/books/status/FREE');
+  }
 }
